@@ -1,0 +1,11 @@
+tags:
+  - name: Welcome to Tweets 
+get:
+  description: Welcome to Tweets
+responses:
+    '200':
+      description: Success
+    '400':
+      description: Misunderstood
+    '500':
+      description: Internal Server Error

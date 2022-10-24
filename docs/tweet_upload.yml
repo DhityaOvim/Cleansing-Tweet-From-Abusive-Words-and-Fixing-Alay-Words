@@ -1,0 +1,17 @@
+tags:
+  - name: Upload a Tweet
+get:
+  description: Upload CSV File of a Tweet
+parameters:
+  - in : formData
+    name: file
+    type: file
+    required : true
+
+responses:
+    '200':
+      description: Success
+    '400':
+      description: Misunderstood
+    '500':
+      description: Internal Server Error

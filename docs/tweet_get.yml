@@ -1,0 +1,16 @@
+tags:
+  - name: Get Tweet by ID
+get:
+  description: Get Tweet by ID
+parameters:
+  - name: id
+    in: path
+    required: true
+    type: string
+responses:
+    '200':
+      description: Success
+    '400':
+      description: Misunderstood
+    '500':
+      description: Internal Server Error

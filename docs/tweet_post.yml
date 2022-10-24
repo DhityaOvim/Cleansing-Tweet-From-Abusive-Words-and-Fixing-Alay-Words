@@ -1,0 +1,24 @@
+tags:
+  - name: Add Tweet
+consumes:  
+- "application/json"
+produces:
+- "application/json"
+parameters:
+  - name : "the tweet"
+    description: "Type Your Tweet Here"
+    in : body
+    required: "false"
+    schema:
+      type: object
+      properties:
+        tweet:
+          type: string
+          example: "type here"
+responses:
+    '200':
+      description: Success
+    '400':
+      description: Misunderstood
+    '500':
+      description: Internal Server Error
