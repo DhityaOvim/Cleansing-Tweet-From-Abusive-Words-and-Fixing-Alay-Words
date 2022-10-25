@@ -143,7 +143,7 @@ def addUpload():
         teks = re.sub(" \"", "\"", teks)
         teks = re.sub(" nya", "nya", teks)
 
-        db.cursor().execute("insert into data_tweet (TWEET, NEW_TWEET) values(?, ?)"(asli, teks))
+        db.cursor().execute("insert into data_tweet (TWEET, NEW_TWEET) values(?, ?)",(asli, teks))
         db.commit()
     return jsonify ('Berhasil')
 ###############################################################################################################
